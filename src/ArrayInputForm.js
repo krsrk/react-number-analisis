@@ -6,13 +6,8 @@ export default function ArrayInputForm() {
     const [arrAnalisisResult, setArrAnalisisResult] = useState(null)
 
     const resultClickHandler = () => {
-        const funcResult = getArrayAnalisis(arrayValue.split(','))
-        const result = Object.keys(funcResult).map( (k) => {
-            return funcResult[k]
-        })
-        console.log(result)
+        const result = getArrayAnalisis(arrayValue.split(','))
         setArrAnalisisResult(result)
-        //console.log(arrAnalisisResult)
     }
 
     return (
